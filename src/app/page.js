@@ -8,8 +8,8 @@ export default function Home() {
     <main className={styles.main}>
       <h1 className={styles.store_header}>Pirate Marketplace</h1>
       <div className={styles.store_cards}>
-        {storeInfo.map((workshop, index) => (
-          <ListingCard key={index} {...workshop} />
+        {storeInfo.map((item, index) => (
+          <ListingCard key={index} {...item} />
         ))}
       </div>
     </main>
