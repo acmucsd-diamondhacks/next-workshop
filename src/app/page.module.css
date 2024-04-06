@@ -1,0 +1,18 @@
+.main {
+  margin-bottom: 2rem;
+}
+
+.store_header {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.store_cards {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
