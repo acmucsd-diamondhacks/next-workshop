@@ -15,7 +15,7 @@ const HeistCard = ({ image, title, location, payout, difficulty }) => {
       <Image
         className={styles.card_img}
         src={image}
-        alt={`${title} location`}
+        alt="Heist Image"
         width={400}
         height={300}
       />
