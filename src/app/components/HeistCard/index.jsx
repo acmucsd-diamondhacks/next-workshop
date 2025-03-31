@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./style.module.css";
 
-const HeistCard = ({ image, title, location, payout, difficulty }) => {
+// Add the missing props we need for the heist card!
+const HeistCard = ({ image }) => {
   const starMap = {
     Easy: 1,
     Medium: 3,
@@ -15,16 +16,17 @@ const HeistCard = ({ image, title, location, payout, difficulty }) => {
       <Image
         className={styles.card_img}
         src={image}
-        alt={`${title} location`}
+        alt="Heist Image"
         width={400}
         height={300}
       />
-      <h2 className={styles.card_title}>{title}</h2>
-      <p className={styles.card_info}>Location: {location}</p>
-      <p className={styles.card_info}>Payout: ${payout}</p>
-      <p className={styles.card_info}>
-        Difficulty: {difficulty} {"⭐️".repeat(starMap[difficulty])}
-      </p>
+      {/* Display the missing props below */}
+      <h2 className={styles.card_title}></h2>
+      <p className={styles.card_info}></p>
+      <p className={styles.card_info}></p>
+      {/* Hint: Use .repeat() to display the stars! */}
+      {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat */}
+      <p className={styles.card_info}></p>
       <Link href="#" className={styles.card_button}>
         Join Heist
       </Link>
