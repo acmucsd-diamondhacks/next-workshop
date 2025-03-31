@@ -21,15 +21,9 @@ const HeistCard = ({ image }) => {
         height={300}
       />
       {/* Display the missing props below */}
-      <h2 className={styles.card_title}></h2>
-      <p className={styles.card_info}></p>
-      <p className={styles.card_info}></p>
-      {/* Hint: Use .repeat() to display the stars! */}
+      {/* Extra: Use .repeat() to display the stars for the difficulty! */}
       {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat */}
-      <p className={styles.card_info}></p>
-      <Link href="#" className={styles.card_button}>
-        Join Heist
-      </Link>
+      {/* For the join heist button, use the Link component! See an example in Navbar and use a placeholder link */}
     </div>
   );
 };
